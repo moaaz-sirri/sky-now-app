@@ -1,0 +1,7 @@
+{
+  "_comment": "Copy this file to stg_keys.json for local staging builds. Do not commit the real stg_keys.json file.",
+  "_appFlavorComment": "Keep APP_FLAVOR as staging so the Dart app and native staging flavor stay aligned.",
+  "_weatherApiKeyComment": "Replace the placeholder with a staging, test, or shared development OpenWeatherMap API key.",
+  "APP_FLAVOR": "staging",
+  "WEATHER_API_KEY": "YOUR_STAGING_OPENWEATHERMAP_API_KEY"
+}

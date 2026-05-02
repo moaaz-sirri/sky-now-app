@@ -1,0 +1,77 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Staging - Debug",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "toolArgs": [
+        "--flavor",
+        "staging",
+        "--dart-define-from-file=stg_keys.json"
+      ]
+    },
+    {
+      "name": "Staging - Profile",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "profile",
+      "toolArgs": [
+        "--flavor",
+        "staging",
+        "--dart-define-from-file=stg_keys.json"
+      ]
+    },
+    {
+      "name": "Staging - Release",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "release",
+      "toolArgs": [
+        "--flavor",
+        "staging",
+        "--dart-define-from-file=stg_keys.json"
+      ]
+    },
+    {
+      "name": "Production - Debug",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "toolArgs": [
+        "--flavor",
+        "production",
+        "--dart-define-from-file=pro_keys.json"
+      ]
+    },
+    {
+      "name": "Production - Profile",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "profile",
+      "toolArgs": [
+        "--flavor",
+        "production",
+        "--dart-define-from-file=pro_keys.json"
+      ]
+    },
+    {
+      "name": "Production - Release",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "release",
+      "toolArgs": [
+        "--flavor",
+        "production",
+        "--dart-define-from-file=pro_keys.json"
+      ]
+    }
+  ]
+}
