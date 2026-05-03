@@ -1,5 +1,5 @@
 {
-  "_comment": "Copy this file to pro_keys.json for local production builds. Do not commit the real pro_keys.json file.",
+  "_comment": "Copy this file to keys_pro.json for local production builds. Do not commit the real keys_pro.json file.",
   "_appFlavorComment": "Keep APP_FLAVOR as production so the Dart app and native production flavor stay aligned.",
   "_weatherApiKeyComment": "Replace the placeholder with the production OpenWeatherMap API key used for release builds.",
   "APP_FLAVOR": "production",

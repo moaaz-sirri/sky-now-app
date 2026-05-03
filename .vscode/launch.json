@@ -10,7 +10,7 @@
       "toolArgs": [
         "--flavor",
         "staging",
-        "--dart-define-from-file=stg_keys.json"
+        "--dart-define-from-file=keys_stg.json"
       ]
     },
     {
@@ -22,7 +22,7 @@
       "toolArgs": [
         "--flavor",
         "staging",
-        "--dart-define-from-file=stg_keys.json"
+        "--dart-define-from-file=keys_stg.json"
       ]
     },
     {
@@ -34,7 +34,7 @@
       "toolArgs": [
         "--flavor",
         "staging",
-        "--dart-define-from-file=stg_keys.json"
+        "--dart-define-from-file=keys_stg.json"
       ]
     },
     {
@@ -46,7 +46,7 @@
       "toolArgs": [
         "--flavor",
         "production",
-        "--dart-define-from-file=pro_keys.json"
+        "--dart-define-from-file=keys_pro.json"
       ]
     },
     {
@@ -58,7 +58,7 @@
       "toolArgs": [
         "--flavor",
         "production",
-        "--dart-define-from-file=pro_keys.json"
+        "--dart-define-from-file=keys_pro.json"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "toolArgs": [
         "--flavor",
         "production",
-        "--dart-define-from-file=pro_keys.json"
+        "--dart-define-from-file=keys_pro.json"
       ]
     }
   ]

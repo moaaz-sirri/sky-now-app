@@ -34,8 +34,8 @@ migrate_working_dir/
 /coverage/
 
 # Local API keys. Keep real keys off source control.
-stg_keys.json
-pro_keys.json
+keys_stg.json
+keys_pro.json
 
 # Symbolication related
 app.*.symbols

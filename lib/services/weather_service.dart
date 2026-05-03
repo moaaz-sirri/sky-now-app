@@ -106,13 +106,13 @@ class WeatherService {
           _WeatherLogInterceptor.colorize(
             _WeatherLogInterceptor.yellow,
             '[API Skipped] Missing OpenWeatherMap API key. '
-            'Run with --dart-define-from-file=stg_keys.json or pro_keys.json.',
+            'Run with --dart-define-from-file=keys_stg.json or keys_pro.json.',
           ),
         );
       }
 
       throw const WeatherException(
-        'Missing OpenWeatherMap API key. Run with --dart-define-from-file=stg_keys.json or pro_keys.json.',
+        'Missing OpenWeatherMap API key. Run with --dart-define-from-file=keys_stg.json or keys_pro.json.',
         statusCode: 401,
         type: WeatherExceptionType.invalidApiKey,
       );
