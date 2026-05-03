@@ -2,13 +2,22 @@
 
 A simple Flutter weather app using OpenWeatherMap.
 
+## Release APK
+
+Latest local production release APK:
+
+- [Download app-production-release.apk](release-apks/app-production-release.apk)
+- Flavor: `production`
+- Size: `46M`
+- SHA-256: `56382e87f1996841cd05b20286f7fc9ae1ad6d312fb14124c29d144e3d0a4d7c`
+
 ## Environment key files
 
 The app has two Flutter flavors and reads configuration from flavor-specific
 Dart define JSON files:
 
-- Staging: `stg_keys.json`
-- Production: `pro_keys.json`
+- Staging: `keys_stg.json`
+- Production: `keys_pro.json`
 
 Real key files are ignored by Git. Do not commit real OpenWeatherMap keys.
 
@@ -19,8 +28,8 @@ Real key files are ignored by Git. Do not commit real OpenWeatherMap keys.
 2. Copy the example files:
 
 ```sh
-cp stg_keys.example.json stg_keys.json
-cp pro_keys.example.json pro_keys.json
+cp keys_stg.example.json keys_stg.json
+cp keys_pro.example.json keys_pro.json
 ```
 
 3. Replace the placeholder `WEATHER_API_KEY` values in both local files.
@@ -39,8 +48,8 @@ normal `//` comments. They are only there to explain the setup; the app reads
 Use the matching flavor and key file:
 
 ```sh
-flutter run --flavor staging --dart-define-from-file=stg_keys.json
-flutter run --flavor production --dart-define-from-file=pro_keys.json
+flutter run --flavor staging --dart-define-from-file=keys_stg.json
+flutter run --flavor production --dart-define-from-file=keys_pro.json
 ```
 
 ## Build
@@ -48,15 +57,15 @@ flutter run --flavor production --dart-define-from-file=pro_keys.json
 Android:
 
 ```sh
-flutter build apk --flavor staging --dart-define-from-file=stg_keys.json
-flutter build apk --flavor production --dart-define-from-file=pro_keys.json
+flutter build apk --flavor staging --dart-define-from-file=keys_stg.json
+flutter build apk --flavor production --dart-define-from-file=keys_pro.json
 ```
 
 iOS:
 
 ```sh
-flutter build ios --flavor staging --dart-define-from-file=stg_keys.json
-flutter build ios --flavor production --dart-define-from-file=pro_keys.json
+flutter build ios --flavor staging --dart-define-from-file=keys_stg.json
+flutter build ios --flavor production --dart-define-from-file=keys_pro.json
 ```
 
 Use the staging key for development and QA builds. Use the production key only
